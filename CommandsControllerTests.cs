@@ -25,6 +25,7 @@ namespace CommandAPI.Tests
             configuration = new MapperConfiguration(cfg => cfg.AddProfile(realProfile));
             mapper = new Mapper(configuration);
         }
+        
         public void Dispose()
         {
             mockRepo = null;
