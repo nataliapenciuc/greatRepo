@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using CommandAPI.Models;
+
 namespace CommandAPI.Tests
 {
     public class CommandTests : IDisposable
@@ -25,6 +26,7 @@ namespace CommandAPI.Tests
             //Assert
             Assert.Equal("Execute Unit Tests", testCommand.HowTo);
         }
+
         [Fact]
         public void CanChangePlatform()
         {
@@ -34,6 +36,7 @@ namespace CommandAPI.Tests
             //Assert
             Assert.Equal("xUnit", testCommand.Platform);
         }
+
         [Fact]
         public void CanChangeCommandLine()
         {
